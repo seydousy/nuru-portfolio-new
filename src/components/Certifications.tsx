@@ -7,27 +7,33 @@ import { useRef } from "react";
 import { SlideIn, AnimatedDivider } from "./AnimatedSection";
 import { motion } from "framer-motion";
 
+// Import certification images
+import cert1 from "@/assets/certifications/certificat-force-n-ia.jpg";
+import cert2 from "@/assets/certifications/analyste-cybersec-force-n.jpg";
+import cert3 from "@/assets/certifications/certificat-ia.jpg";
+import cert4 from "@/assets/certifications/certif-ap-sta-objet-connecte.jpg";
+import cert5 from "@/assets/certifications/certif-aws.jpg";
+import cert6 from "@/assets/certifications/certif-data-science-objet-connecte.jpg";
+import cert7 from "@/assets/certifications/certif-eval-perf-machine-learning.jpg";
+import cert8 from "@/assets/certifications/certif-flask.jpg";
+import cert9 from "@/assets/certifications/certif-git github.jpg";
+import cert10 from "@/assets/certifications/certif-tcp-ip.jpg";
+
 const Certifications = () => {
   const { t } = useLanguage();
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
   
   const certifications = [
-    { title: t("cert1.title"), institution: t("cert1.institution"), date: t("cert1.date"), description: t("cert1.description"), image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" },
-    { title: t("cert2.title"), institution: t("cert2.institution"), date: t("cert2.date"), description: t("cert2.description"), image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" },
-    { title: t("cert3.title"), institution: t("cert3.institution"), date: t("cert3.date"), description: t("cert3.description"), image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop" },
-    { title: t("cert4.title"), institution: t("cert4.institution"), date: t("cert4.date"), description: t("cert4.description"), image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&h=300&fit=crop" },
-    { title: t("cert5.title"), institution: t("cert5.institution"), date: t("cert5.date"), description: t("cert5.description"), image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" },
-    { title: t("cert6.title"), institution: t("cert6.institution"), date: t("cert6.date"), description: t("cert6.description"), image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop" },
-    { title: t("cert7.title"), institution: t("cert7.institution"), date: t("cert7.date"), description: t("cert7.description"), image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=300&fit=crop" },
-    { title: t("cert8.title"), institution: t("cert8.institution"), date: t("cert8.date"), description: t("cert8.description"), image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=400&h=300&fit=crop" },
-    { title: t("cert9.title"), institution: t("cert9.institution"), date: t("cert9.date"), description: t("cert9.description"), image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop" },
-    { title: t("cert10.title"), institution: t("cert10.institution"), date: t("cert10.date"), description: t("cert10.description"), image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=400&h=300&fit=crop" },
-    { title: t("cert11.title"), institution: t("cert11.institution"), date: t("cert11.date"), description: t("cert11.description"), image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=300&fit=crop" },
-    { title: t("cert12.title"), institution: t("cert12.institution"), date: t("cert12.date"), description: t("cert12.description"), image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop" },
-    { title: t("cert13.title"), institution: t("cert13.institution"), date: t("cert13.date"), description: t("cert13.description"), image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop" },
-    { title: t("cert14.title"), institution: t("cert14.institution"), date: t("cert14.date"), description: t("cert14.description"), image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" },
-    { title: t("cert15.title"), institution: t("cert15.institution"), date: t("cert15.date"), description: t("cert15.description"), image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=300&fit=crop" },
-    { title: t("cert16.title"), institution: t("cert16.institution"), date: t("cert16.date"), description: t("cert16.description"), image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=300&fit=crop" },
+    { title: t("cert1.title"), institution: t("cert1.institution"), date: t("cert1.date"), description: t("cert1.description"), image: cert1 },
+    { title: t("cert2.title"), institution: t("cert2.institution"), date: t("cert2.date"), description: t("cert2.description"), image: cert2 },
+    { title: t("cert3.title"), institution: t("cert3.institution"), date: t("cert3.date"), description: t("cert3.description"), image: cert3 },
+    { title: t("cert4.title"), institution: t("cert4.institution"), date: t("cert4.date"), description: t("cert4.description"), image: cert4 },
+    { title: t("cert5.title"), institution: t("cert5.institution"), date: t("cert5.date"), description: t("cert5.description"), image: cert5 },
+    { title: t("cert6.title"), institution: t("cert6.institution"), date: t("cert6.date"), description: t("cert6.description"), image: cert6 },
+    { title: t("cert7.title"), institution: t("cert7.institution"), date: t("cert7.date"), description: t("cert7.description"), image: cert7 },
+    { title: t("cert8.title"), institution: t("cert8.institution"), date: t("cert8.date"), description: t("cert8.description"), image: cert8 },
+    { title: t("cert9.title"), institution: t("cert9.institution"), date: t("cert9.date"), description: t("cert9.description"), image: cert9 },
+    { title: t("cert10.title"), institution: t("cert10.institution"), date: t("cert10.date"), description: t("cert10.description"), image: cert10 },
   ];
 
   return (

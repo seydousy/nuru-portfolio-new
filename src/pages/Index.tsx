@@ -26,7 +26,7 @@ const Index = () => {
       <Contact />
       <footer className="py-6 text-center bg-muted/30 border-t border-border">
         <p className="text-muted-foreground">
-          © 2024 Seydou Nourou SY. {t("footer.rights")}
+          © 2025 Seydou Nourou SY. {t("footer.rights")}
         </p>
       </footer>
       <ScrollToTop />

@@ -70,8 +70,8 @@ const Contact = () => {
                 <div className="flex justify-center gap-4 mt-6 pt-6 border-t">
                   {[
                     { href: "mailto:seydou.sy@example.com", icon: Mail, label: "Email" },
-                    { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-                    { href: "https://github.com", icon: Github, label: "GitHub" },
+                    { href: "https://www.linkedin.com/in/seydou-nourou-sy-ia-informatique", icon: Linkedin, label: "LinkedIn" },
+                    { href: "https://github.com/seydousy", icon: Github, label: "GitHub" },
                   ].map((link) => (
                     <motion.a
                       key={link.label}

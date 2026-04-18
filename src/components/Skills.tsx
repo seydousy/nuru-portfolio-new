@@ -10,8 +10,8 @@ const Skills = () => {
     { category: t("skills.ai.title"), skills: ["TensorFlow", "PyTorch", "Scikit-learn", "NLP", "Computer Vision", "Deep Learning"] },
     { category: t("skills.data.title"), skills: ["Apache Spark", "Hadoop", "Kafka", "ETL", "Data Warehousing", "SQL/NoSQL"] },
     { category: t("skills.programming.title"), skills: ["Python", "Java", "JavaScript", "TypeScript", "C++", "R"] },
-    { category: t("skills.web.title"), skills: ["React", "Node.js", "Django", "Flask", "FastAPI", "REST APIs"] },
-    { category: t("skills.cloud.title"), skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Git", "Linux"] },
+    { category: t("skills.web.title"), skills: ["React", "Node.js", "Laravel","Django", "Flask", "FastAPI", "REST APIs"] },
+    { category: t("skills.cloud.title"), skills: ["AWS", "Docker", "CI/CD", "Git", "Linux"] },
     { category: t("skills.datascience.title"), skills: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter", "Analytics"] },
   ];
 
