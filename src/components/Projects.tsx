@@ -8,6 +8,19 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SlideIn, AnimatedDivider } from "./AnimatedSection";
 
+// Import project images
+import classificationImage from "@/assets/portfolio/classification_image_cifar-10.jpg";
+import energyPredict from "@/assets/portfolio/EnergyPredict.jpg";
+import mlpImg from "@/assets/portfolio/mlp_img.jpg";
+import projetIa2 from "@/assets/portfolio/projet_ia_2.jpg";
+import laptopPrice from "@/assets/portfolio/LaptopPrice-1.jpg";
+import fraudeDetection from "@/assets/portfolio/fraudeDetection.png";
+import toubaKhelcom from "@/assets/portfolio/toubaKhelcom.jpg";
+import fret1 from "@/assets/portfolio/fret_1.jpg";
+import ndadjeFoot from "@/assets/portfolio/ndadje-foot-1.jpg";
+import samaBitik from "@/assets/portfolio/sama-bitik-1.jpg";
+import boutikNuru from "@/assets/portfolio/boutik-nuru-1.jpg";
+
 const Projects = () => {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -20,17 +33,17 @@ const Projects = () => {
   ];
 
   const projects = [
-    { icon: Brain, title: t("project1.title"), description: t("project1.description"), detailedDescription: t("project1.detailedDescription"), tags: ["Python", "PyTorch", "Flask", "CNN", "CIFAR-10"], image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "ai" },
-    { icon: BarChart3, title: t("project2.title"), description: t("project2.description"), detailedDescription: t("project2.detailedDescription"), tags: ["Python", "Gradient Boosting", "Energy Prediction", "Africa"], image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "ai" },
-    { icon: Sparkles, title: t("project3.title"), description: t("project3.description"), detailedDescription: t("project3.detailedDescription"), tags: ["Python", "MLP", "Facial Recognition", "LFW Dataset"], image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "ai" },
-    { icon: Brain, title: t("project4.title"), description: t("project4.description"), detailedDescription: t("project4.detailedDescription"), tags: ["Python", "Deep Learning", "EuroSAT", "Satellite Images"], image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "ai" },
-    { icon: Brain, title: t("project5.title"), description: t("project5.description"), detailedDescription: t("project5.detailedDescription"), tags: ["Python", "Streamlit", "AI", "Price Prediction"], image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "ai" },
-    { icon: Lock, title: t("project6.title"), description: t("project6.description"), detailedDescription: t("project6.detailedDescription"), tags: ["Python", "Scikit-learn", "Anomaly Detection"], image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "ai" },
-    { icon: Globe, title: t("project7.title"), description: t("project7.description"), detailedDescription: t("project7.detailedDescription"), tags: ["WordPress", "E-commerce", "Furniture", "Web Design"], image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "web" },
-    { icon: ShoppingCart, title: t("project8.title"), description: t("project8.description"), detailedDescription: t("project8.detailedDescription"), tags: ["React", "Tailwind CSS", "Laravel", "Logistics"], image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "web" },
-    { icon: Camera, title: t("project9.title"), description: t("project9.description"), detailedDescription: t("project9.detailedDescription"), tags: ["Football", "Community", "Web Platform"], image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "web" },
-    { icon: ShoppingCart, title: t("project10.title"), description: t("project10.description"), detailedDescription: t("project10.detailedDescription"), tags: ["Retail", "Inventory", "Management"], image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "web" },
-    { icon: ShoppingCart, title: t("project11.title"), description: t("project11.description"), detailedDescription: t("project11.detailedDescription"), tags: ["E-commerce", "Electronics", "Web Store"], image: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&h=600&fit=crop", github: "https://github.com/seydounousy", demo: "https://demo.example.com", category: "web" },
+    { icon: Brain, title: t("project1.title"), description: t("project1.description"), detailedDescription: t("project1.detailedDescription"), tags: ["Python", "PyTorch", "Flask", "CNN", "CIFAR-10"], image: classificationImage, github: "https://github.com/seydousy/classification_image_cifar", demo: "#", category: "ai" },
+    { icon: BarChart3, title: t("project2.title"), description: t("project2.description"), detailedDescription: t("project2.detailedDescription"), tags: ["Python", "Gradient Boosting", "Energy Prediction", "Africa"], image: energyPredict, github: "https://github.com/seydousy/AfrikaEnergyPredict", demo: "#", category: "ai" },
+    { icon: Sparkles, title: t("project3.title"), description: t("project3.description"), detailedDescription: t("project3.detailedDescription"), tags: ["Python", "MLP", "Facial Recognition", "LFW Dataset"], image: mlpImg, github: "https://github.com/seydousy/mlp_faciale_recognition", demo: "#", category: "ai" },
+    { icon: Brain, title: t("project4.title"), description: t("project4.description"), detailedDescription: t("project4.detailedDescription"), tags: ["Python", "Deep Learning", "EuroSAT", "Satellite Images"], image: projetIa2, github: "https://github.com/seydousy/Reconnaissance_Images_Satellitaires", demo: "#", category: "ai" },
+    { icon: Brain, title: t("project5.title"), description: t("project5.description"), detailedDescription: t("project5.detailedDescription"), tags: ["Python", "Streamlit", "AI", "Price Prediction"], image: laptopPrice, github: "#", demo: "#", category: "ai" },
+    { icon: Lock, title: t("project6.title"), description: t("project6.description"), detailedDescription: t("project6.detailedDescription"), tags: ["Python", "Scikit-learn", "Anomaly Detection"], image: fraudeDetection, github: "#", demo: "#", category: "ai" },
+    { icon: Globe, title: t("project7.title"), description: t("project7.description"), detailedDescription: t("project7.detailedDescription"), tags: ["WordPress", "E-commerce", "Furniture", "Web Design"], image: toubaKhelcom, github: "#", demo: "#", category: "web" },
+    { icon: ShoppingCart, title: t("project8.title"), description: t("project8.description"), detailedDescription: t("project8.detailedDescription"), tags: ["React", "Tailwind CSS", "Laravel", "Logistics"], image: fret1, github: "#", demo: "#", category: "web" },
+    { icon: Camera, title: t("project9.title"), description: t("project9.description"), detailedDescription: t("project9.detailedDescription"), tags: ["Football", "Community", "Web Platform"], image: ndadjeFoot, github: "#", demo: "#", category: "web" },
+    { icon: ShoppingCart, title: t("project10.title"), description: t("project10.description"), detailedDescription: t("project10.detailedDescription"), tags: ["Retail", "Inventory", "Management"], image: samaBitik, github: "#", demo: "#", category: "web" },
+    { icon: ShoppingCart, title: t("project11.title"), description: t("project11.description"), detailedDescription: t("project11.detailedDescription"), tags: ["E-commerce", "Electronics", "Web Store"], image: boutikNuru, github: "#", demo: "#", category: "web" },
   ];
 
   const filteredProjects = selectedCategory === "all" 
