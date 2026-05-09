@@ -20,6 +20,7 @@ import fret1 from "@/assets/portfolio/fret_1.jpg";
 import ndadjeFoot from "@/assets/portfolio/ndadje-foot-1.jpg";
 import samaBitik from "@/assets/portfolio/sama-bitik-1.jpg";
 import boutikNuru from "@/assets/portfolio/boutik-nuru-1.jpg";
+import endeavourImg from "@/assets/portfolio/endeavour.png";
 
 const Projects = () => {
   const { t } = useLanguage();
@@ -44,6 +45,7 @@ const Projects = () => {
     { icon: Camera, title: t("project9.title"), description: t("project9.description"), detailedDescription: t("project9.detailedDescription"), tags: ["Football", "Community", "Web Platform"], image: ndadjeFoot, github: "#", demo: "#", category: "web" },
     { icon: ShoppingCart, title: t("project10.title"), description: t("project10.description"), detailedDescription: t("project10.detailedDescription"), tags: ["Retail", "Inventory", "Management"], image: samaBitik, github: "#", demo: "#", category: "web" },
     { icon: ShoppingCart, title: t("project11.title"), description: t("project11.description"), detailedDescription: t("project11.detailedDescription"), tags: ["E-commerce", "Electronics", "Web Store"], image: boutikNuru, github: "#", demo: "#", category: "web" },
+    { icon: BarChart3, title: t("project12.title"), description: t("project12.description"), detailedDescription: t("project12.detailedDescription"), tags: ["Python", "Streamlit", "Pandas", "Plotly", "Data Analytics"], image: endeavourImg, github: "#", demo: "#", category: "data" },
   ];
 
   const filteredProjects = selectedCategory === "all" 

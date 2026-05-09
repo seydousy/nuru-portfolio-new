@@ -101,6 +101,9 @@ const translations = {
     "project11.title": "Boutik Nuru",
     "project11.description": "Boutique de vente de matériels électroniques",
     "project11.detailedDescription": "Boutik Nuru est une boutique en ligne spécialisée dans la vente de matériels électroniques. Elle offre une large gamme de produits électroniques, des ordinateurs aux accessoires, avec un focus sur la qualité et le service client. Le site est conçu pour une navigation facile et des achats sécurisés.",
+    "project12.title": "Endeavour Mining Data Analysis",
+    "project12.description": "Tableau de bord interactif d'analyse de données pour les insights de performance minière, tendances de production et KPIs opérationnels.",
+    "project12.detailedDescription": "Un tableau de bord d'analyse de données complet conçu pour les opérations minières. Développé avec Streamlit, cette application fournit des insights en temps réel sur les tendances de production, les indicateurs clés de performance (KPIs) et les métriques de performance minière. Il propose des visualisations interactives avec Plotly et du traitement de données avec Pandas pour fournir des insights actionnables aux parties prenantes.",
     
     // Certifications
     "certifications.title": "Certifications",
@@ -287,6 +290,9 @@ const translations = {
     "project11.title": "Boutik Nuru",
     "project11.description": "Online store for electronic materials",
     "project11.detailedDescription": "Boutik Nuru is an online store specializing in electronic materials. It offers a wide range of electronic products, from computers to accessories, with a focus on quality and customer service. The site is designed for easy navigation and secure purchases.",
+    "project12.title": "Endeavour Mining Data Analysis",
+    "project12.description": "Interactive data analytics dashboard for mining performance insights, production trends, and operational KPIs.",
+    "project12.detailedDescription": "A comprehensive data analytics dashboard designed for mining operations. Built with Streamlit, this application provides real-time insights into production trends, operational key performance indicators (KPIs), and mining performance metrics. Features interactive visualizations using Plotly and data processing with Pandas to deliver actionable insights to stakeholders.",
     
     // Certifications
     "certifications.title": "Certifications",
