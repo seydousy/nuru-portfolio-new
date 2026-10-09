@@ -104,6 +104,9 @@ const translations = {
     "project12.title": "Endeavour Mining Data Analysis",
     "project12.description": "Tableau de bord interactif d'analyse de données pour les insights de performance minière, tendances de production et KPIs opérationnels.",
     "project12.detailedDescription": "Un tableau de bord d'analyse de données complet conçu pour les opérations minières. Développé avec Streamlit, cette application fournit des insights en temps réel sur les tendances de production, les indicateurs clés de performance (KPIs) et les métriques de performance minière. Il propose des visualisations interactives avec Plotly et du traitement de données avec Pandas pour fournir des insights actionnables aux parties prenantes.",
+    "project13.title": "Loan Prediction",
+    "project13.description": "Simulateur de prédiction de prêts conçu pour accompagner les banques dans l'évaluation des demandes.",
+    "project13.detailedDescription": "Modèle qui simule la prédiction d'octroi de prêts pour les banques. L'interface utilisateur est développée avec React et l'API backend avec FastAPI et Python.",
     
     // Certifications
     "certifications.title": "Certifications",
@@ -293,6 +296,9 @@ const translations = {
     "project12.title": "Endeavour Mining Data Analysis",
     "project12.description": "Interactive data analytics dashboard for mining performance insights, production trends, and operational KPIs.",
     "project12.detailedDescription": "A comprehensive data analytics dashboard designed for mining operations. Built with Streamlit, this application provides real-time insights into production trends, operational key performance indicators (KPIs), and mining performance metrics. Features interactive visualizations using Plotly and data processing with Pandas to deliver actionable insights to stakeholders.",
+    "project13.title": "Loan Prediction",
+    "project13.description": "A loan prediction simulator designed to help banks assess loan applications.",
+    "project13.detailedDescription": "A model that simulates loan approval predictions for banks. The user interface is built with React, and the backend API uses FastAPI and Python.",
     
     // Certifications
     "certifications.title": "Certifications",
