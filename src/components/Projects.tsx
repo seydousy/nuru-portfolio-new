@@ -14,7 +14,7 @@ import energyPredict from "@/assets/portfolio/EnergyPredict.jpg";
 import mlpImg from "@/assets/portfolio/mlp_img.jpg";
 import projetIa2 from "@/assets/portfolio/projet_ia_2.jpg";
 import laptopPrice from "@/assets/portfolio/LaptopPrice-1.jpg";
-import fraudeDetection from "@/assets/portfolio/fraudeDetection.png";
+import fraudDetection from "@/assets/portfolio/fraud-detection.png";
 import toubaKhelcom from "@/assets/portfolio/toubaKhelcom.jpg";
 import fret1 from "@/assets/portfolio/fret_1.jpg";
 import ndadjeFoot from "@/assets/portfolio/ndadje-foot-1.jpg";
@@ -41,7 +41,7 @@ const Projects = () => {
     { icon: Sparkles, title: t("project3.title"), description: t("project3.description"), detailedDescription: t("project3.detailedDescription"), tags: ["Python", "MLP", "Facial Recognition", "LFW Dataset"], image: mlpImg, github: "https://github.com/seydousy/mlp_faciale_recognition", demo: "#", category: "ai" },
     { icon: Brain, title: t("project4.title"), description: t("project4.description"), detailedDescription: t("project4.detailedDescription"), tags: ["Python", "Deep Learning", "EuroSAT", "Satellite Images"], image: projetIa2, github: "https://github.com/seydousy/Reconnaissance_Images_Satellitaires", demo: "#", category: "ai" },
     { icon: Brain, title: t("project5.title"), description: t("project5.description"), detailedDescription: t("project5.detailedDescription"), tags: ["Python", "Streamlit", "AI", "Price Prediction"], image: laptopPrice, github: "#", demo: "#", category: "ai" },
-    { icon: Lock, title: t("project6.title"), description: t("project6.description"), detailedDescription: t("project6.detailedDescription"), tags: ["Python", "Scikit-learn", "Anomaly Detection"], image: fraudeDetection, github: "#", demo: "#", category: "ai" },
+    { icon: Lock, title: t("project6.title"), description: t("project6.description"), detailedDescription: t("project6.detailedDescription"), tags: ["Python", "LightGBM", "Streamlit", "SHAP", "Fraud Detection"], image: fraudDetection, github: "https://github.com/seydousy/xente-fraud-detection", demo: "#", category: "ai" },
     { icon: Globe, title: t("project7.title"), description: t("project7.description"), detailedDescription: t("project7.detailedDescription"), tags: ["WordPress", "E-commerce", "Furniture", "Web Design"], image: toubaKhelcom, github: "#", demo: "#", category: "web" },
     { icon: ShoppingCart, title: t("project8.title"), description: t("project8.description"), detailedDescription: t("project8.detailedDescription"), tags: ["React", "Tailwind CSS", "Laravel", "Logistics"], image: fret1, github: "#", demo: "#", category: "web" },
     { icon: Camera, title: t("project9.title"), description: t("project9.description"), detailedDescription: t("project9.detailedDescription"), tags: ["Football", "Community", "Web Platform"], image: ndadjeFoot, github: "#", demo: "#", category: "web" },
@@ -153,12 +153,14 @@ const Projects = () => {
                             {t("projects.github")}
                           </a>
                         </Button>
-                        <Button variant="default" size="sm" asChild>
-                          <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="w-4 h-4 mr-1" />
-                            {t("projects.demo")}
-                          </a>
-                        </Button>
+                        {project.demo !== "#" && (
+                          <Button variant="default" size="sm" asChild>
+                            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="w-4 h-4 mr-1" />
+                              {t("projects.demo")}
+                            </a>
+                          </Button>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
